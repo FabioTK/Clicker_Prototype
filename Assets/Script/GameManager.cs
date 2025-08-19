@@ -1,8 +1,11 @@
 using UnityEngine;
 using TMPro;
+using Singleton.Generic;
 
-public class GameManager : MonoBehaviour
+public class GameManager : Singleton<GameManager>
 {
+
+
     private int _followers;
     [SerializeField] private int _followerMultiplier;
     [SerializeField] private TMP_Text _followersText;
